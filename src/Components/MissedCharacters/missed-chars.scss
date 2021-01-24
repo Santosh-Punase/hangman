@@ -1,0 +1,27 @@
+@import 'src/assets/scss/variables';
+
+.hangman__missed-characters {
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+  margin: 2rem 2rem auto auto;
+  min-width: 28rem;
+
+  &__text {
+    font-size: 1rem;
+    margin-left: 0.5rem;
+    color: $gray-dark;
+  }
+
+  &__char {
+    font-size: 3rem;
+    font-weight: 800;
+    color: $blue-light;
+    display: flex;
+    flex-direction: row;
+
+    div {
+      margin-left: 0.5rem;
+    }
+  }
+}

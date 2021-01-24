@@ -1,0 +1,156 @@
+@import 'src/assets/scss/variables.scss';
+
+.hangman__man {
+  position: relative;
+  margin-top: 2rem;
+  margin-left: 2rem;
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &-neck {
+    width: 1rem;
+    height: 2rem;
+    border-bottom-left-radius: 0.3rem;
+    border-bottom-right-radius: 0.3rem;
+    background-color: $yellow-light;
+    margin-top: -1rem;
+  }
+
+  &-corpus {
+    position: relative;
+    width: 4rem;
+    height: 5rem;
+    margin-top: -0.5rem;
+    border-radius: 0.2rem;
+    background-color: $green-light;
+    &::before {
+      content: '';
+      width: 2rem;
+      height: 5rem;
+      position: absolute;
+      right: 0;
+      top: 0;
+      border-top-right-radius: 0.2rem;
+      background-color: $green-dark;
+    }
+    &::after {
+      content: '';
+      width: 4rem;
+      height: 2rem;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      border-bottom-left-radius: 0.2rem;
+      border-bottom-right-radius: 0.2rem;
+      background-color: $blue-sky-blue;
+    }
+  }
+
+  &-arm__left {
+    position: absolute;
+    width: 1.5rem;
+    height: 4rem;
+    border-bottom-left-radius: 0.2rem;
+    border-bottom-right-radius: 0.2rem;
+    background-color: $green-light;
+    transform: rotate(45deg);
+    transform-origin: 0% 0%;
+    z-index: 2;
+  }
+
+  &-arm__right {
+    position: absolute;
+    width: 1.5rem;
+    left: 2.5rem;
+    top: 0;
+    height: 4rem;
+    border-bottom-left-radius: 0.2rem;
+    border-bottom-right-radius: 0.2rem;
+    background-color: $green-dark;
+    transform: rotate(-45deg);
+    transform-origin: 100% 0%;
+    z-index: 2;
+  }
+
+  &-hand__left {
+    position: absolute;
+    width: 1rem;
+    height: 4.5rem;
+    margin: 0.12rem;
+    border-bottom-left-radius: 0.2rem;
+    border-bottom-right-radius: 0.2rem;
+    background-color: $yellow-light;
+    transform: rotate(45deg);
+    transform-origin: 0% 0%;
+    z-index: 1;
+  }
+  &-hand__right {
+    position: absolute;
+    right: 0;
+    top: 0.12rem;
+    width: 1rem;
+    height: 4.37rem;
+    margin: 0.12rem;
+    border-bottom-left-radius: 0.2rem;
+    border-bottom-right-radius: 0.2rem;
+    background-color: $yellow-light;
+    transform: rotate(-45deg);
+    transform-origin: 100% 0%;
+    z-index: 1;
+  }
+
+  &-leg__left {
+    position: absolute;
+    width: 1.75rem;
+    height: 5rem;
+    top: 4.5rem;
+    left: 0;
+    border-bottom-left-radius: 0.2rem;
+    border-bottom-right-radius: 0.2rem;
+    background-color: $blue-sky-blue;
+    transform: rotate(10deg);
+    transform-origin: 0% 0%;
+    z-index: 2;
+  }
+
+  &-leg__right {
+    position: absolute;
+    width: 1.75rem;
+    right: 0;
+    top: 4.5rem;
+    height: 5rem;
+    border-bottom-left-radius: 0.2rem;
+    border-bottom-right-radius: 0.2rem;
+    background-color: $blue-sky-blue;
+    transform: rotate(-10deg);
+    transform-origin: 100% 0%;
+    z-index: 2;
+  }
+
+  &-foot__left {
+    position: absolute;
+    width: 3rem;
+    height: 1rem;
+    top: 9rem;
+    left: -2rem;
+    border-radius: 0.4rem;
+    background-color: $yellow-light;
+    transform: rotate(10deg);
+    transform-origin: 0% 0%;
+    z-index: 1;
+  }
+  &-foot__right {
+    position: absolute;
+    right: -2rem;
+    width: 3rem;
+    height: 1rem;
+    top: 9rem;
+    border-radius: 0.4rem;
+    background-color: $yellow-light;
+    transform: rotate(-10deg);
+    transform-origin: 100% 0%;
+    z-index: 1;
+  }
+}

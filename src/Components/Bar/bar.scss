@@ -1,0 +1,26 @@
+
+@import 'src/assets/scss/variables';
+
+.hangman__bar {
+  background-color: $gray-dark;
+  height: 1rem;
+  border-top-right-radius: 0.4rem;
+  border-bottom-right-radius: 0.4rem;
+  position: relative;
+  left: -2rem;
+
+  &-container {
+    align-self: flex-start;
+    width: 100%;
+  }
+
+  &.bar-horizontal {
+    width: 75%;
+  }
+
+  &.bar-vertical {
+    width: 4rem;
+    left: calc(50% - 2rem);
+    transform: translateY(1rem) rotate(90deg);
+  }
+}

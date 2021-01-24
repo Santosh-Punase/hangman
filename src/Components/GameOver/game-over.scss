@@ -1,0 +1,36 @@
+@import 'src/assets/scss/variables';
+
+.hangman__game-over {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  background-color: $blue-dark;
+  opacity: 0.8;
+  z-index: 100;
+  text-transform: uppercase;
+  user-select: none;
+
+  &__text {
+    color: $white;
+    font-size: 3rem;
+    opacity: 1;
+    margin-bottom: 1rem;
+  }
+
+  &__button {
+    opacity: 1;
+    font-size: 1rem;
+    color: $orange;
+    z-index: 150;
+    padding: 0.5rem 1.5rem;
+    border-radius: 1rem;
+    border: 2px dotted $orange;
+    cursor: pointer;
+  }
+}

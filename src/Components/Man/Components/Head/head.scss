@@ -1,0 +1,172 @@
+@import 'src/assets/scss/variables.scss';
+
+.hangman__man {
+
+  &-head {
+    width: 6rem;
+    height: 6rem;
+    z-index: 10;
+    position: relative;
+  }
+
+  &-face {
+    width: 4rem;
+    height: 6rem;
+    margin: 0 1rem ;
+    border-radius: 2rem;
+    background-color: $brown;
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+  }
+
+  &-ears {
+    width: 5.5rem;
+    height: 1rem;
+    border-radius: 0.5rem;
+    position: absolute;
+    background-color: $yellow-light;
+    top: 2.5rem;
+    left: 0.25rem;
+
+    &::after {
+      position: absolute;
+      content: '';
+      width: 5rem;
+      height: 0.75rem;
+      background-color: $yellow-dark;
+      border-radius: 1rem;
+      top: 0.125rem;
+      left: 0.25rem;
+    }
+  }
+
+  &-forehead {
+    width: 4rem;
+    height: 3.5rem;
+    margin: 0 1rem ;
+    background-color: $yellow-light;
+    position: absolute;
+    top: 0;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    z-index: 3;
+  }
+
+  &-chick {
+    background-color: $yellow-light;
+    width: 1.75rem;
+    height: 1rem;
+    position: absolute;
+    top: 2.75rem;
+    z-index: 2;
+    border-bottom-left-radius: 0.3rem;
+    border-bottom-right-radius: 0.3rem;
+    
+    &.chick__left {
+      left: 1rem;
+      transform: rotate(-20deg);
+      transform-origin: 100% 0;
+    }
+
+    &.chick__right {
+      left: 3.25rem;
+      transform: rotate(20deg);
+      transform-origin: 0 0;
+    }
+  }
+
+  &-nose {
+    background-color: $yellow-light;
+    width: 1rem;
+    height: 1rem;
+    position: absolute;
+    top: 3.25rem;
+    left: 2.5rem;
+    z-index: 2;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+  }
+
+  &-mouth {
+    background-color: $white;
+    width: 1rem;
+    height: 0.5rem;
+    position: absolute;
+    top: 4.5rem;
+    left: 2.5rem;
+    z-index: 2;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+  }
+
+  &-eyes {
+    position: absolute;
+    width: 0.5rem;
+    height: 0.5rem;
+    top: 2.75rem;
+    background-color: $black;
+    z-index: 3;
+    border-radius: 50%;
+    border: 1px solid black;
+
+    &.eye__left {
+      left: 1.75rem;
+      &::before {
+        position: absolute;
+        content: '';
+        width: 1rem;
+        height: 0.5rem;
+        top: -0.25rem;
+        left: -0.25rem;
+        border-top: 1px solid $gray-dark;
+        border-radius: 40%;
+      }
+      &::after {
+        position: absolute;
+        content: '';
+        width: 0.125rem;
+        height: 0.125rem;
+        left: 0.1rem;
+        top: 0.1rem;
+        background-color: $white;
+        border-radius: 50%;
+      }
+    }
+
+    &.eye__right {
+      left: 3.75rem;
+      &::before {
+        position: absolute;
+        content: '';
+        width: 1rem;
+        height: 0.5rem;
+        top: -0.25rem;
+        left: -0.25rem;
+        border-top: 1px solid $gray-dark;
+        border-radius: 40%;
+      }
+      &::after {
+        position: absolute;
+        content: '';
+        width: 0.125rem;
+        height: 0.125rem;
+        left: 0.1rem;
+        top: 0.1rem;
+        background-color: $white;
+        border-radius: 50%;
+      }
+    }
+  }
+
+  &-earing {
+    position: absolute;
+    width: 0.25rem;
+    height: 0.25rem;
+    top: 3.45rem;
+    left: 5rem;
+    border-radius: 50%;
+    background-color: $blue-faded;
+    z-index: 3;
+  }
+}

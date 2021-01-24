@@ -1,0 +1,29 @@
+@import 'src/assets/scss/variables';
+
+.hangman__word {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  bottom: 2rem;
+  left: 2rem;
+  right: 2rem;
+
+  &__char-box {
+    width: 6vw;
+    height: 6vw;
+    border-radius: 0.3rem;
+    background-color: $gray-dark;
+    font-size: 2.25rem;
+    font-weight: 800;
+    font-style: bold;
+    color: $white;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 6vw;
+
+    &.box-empty {
+      background-color: $gray-light;
+    }
+  }
+
+}
