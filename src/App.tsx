@@ -7,8 +7,8 @@ import './app.scss';
 
 interface State {
   word: string;
-  guessedChars: string[];
-  missedChars: string[];
+  guessedCharacters: string[];
+  missedCharacters: string[];
   uniqueCharactersInWord: string[];
 }
 
@@ -18,8 +18,8 @@ class App extends React.Component<unknown, State> {
     super(props);
     this.state = {
       word: '',
-      guessedChars: [],
-      missedChars: [],
+      guessedCharacters: [],
+      missedCharacters: [],
       uniqueCharactersInWord: []
     }
   }
@@ -52,26 +52,26 @@ class App extends React.Component<unknown, State> {
     if(!keyEvent.code.includes('Key')) return;
 
     const key = keyEvent.key.toLowerCase();
-    const { guessedChars, missedChars, word } = this.state;
+    const { guessedCharacters, missedCharacters, word } = this.state;
 
-    if(!word.includes(key) && !missedChars.includes(key)) {
-      missedChars.push(key);
+    if(!word.includes(key) && !missedCharacters.includes(key)) {
+      missedCharacters.push(key);
     }
 
-    if(word.includes(key) && !guessedChars.includes(key)) {
-      guessedChars.push(key);
+    if(word.includes(key) && !guessedCharacters.includes(key)) {
+      guessedCharacters.push(key);
     }
 
-    this.setState({ guessedChars, missedChars });
+    this.setState({ guessedCharacters, missedCharacters });
   }
 
   onNewWordClick = () => {
-    this.setState({ word: '', guessedChars: [], missedChars: [] });
+    this.setState({ word: '', guessedCharacters: [], missedCharacters: [] });
     this.fetchNewWord();
   }
 
   render() {
-    const { word, guessedChars, missedChars, uniqueCharactersInWord } = this.state;
+    const { word, guessedCharacters, missedCharacters, uniqueCharactersInWord } = this.state;
 
     if(!word) {
       return <LoadingScreen />
@@ -81,12 +81,12 @@ class App extends React.Component<unknown, State> {
       <div className="hangman">
         <div className="hangman__background">
           <div className="hangman__background-card">
-          <Man lives={11 - missedChars.length} />
-          <MissedCharacters characters={missedChars} />
-          <Word word={word} gussedCharacters={guessedChars}/>
+          <Man lives={11 - missedCharacters.length} />
+          <MissedCharacters characters={missedCharacters} />
+          <Word word={word} gussedCharacters={guessedCharacters} />
           </div>
         </div>
-        <GameOver onNewWordClick={this.onNewWordClick} isGameOver={missedChars.length === 11} hasPlayerWon={uniqueCharactersInWord.length === guessedChars.length} />
+        <GameOver onNewWordClick={this.onNewWordClick} isGameOver={missedCharacters.length === 11} hasPlayerWon={uniqueCharactersInWord.length === guessedCharacters.length} />
       </div>
     );
   }
