@@ -9,6 +9,7 @@ interface State {
   word: string;
   guessedChars: string[];
   missedChars: string[];
+  uniqueCharactersInWord: string[];
 }
 
 class App extends React.Component<unknown, State> {
@@ -18,13 +19,21 @@ class App extends React.Component<unknown, State> {
     this.state = {
       word: '',
       guessedChars: [],
-      missedChars: []
+      missedChars: [],
+      uniqueCharactersInWord: []
     }
   }
 
   fetchNewWord = () => {
     getGuessWord()
-    .then(word => this._isMounted && this.setState({ word: word.toLowerCase() }))
+    .then((word) => {
+      if(!this._isMounted) return;
+      let uniqueCharactersInWord: string[] = [];
+      for(let c of word) {
+        if(!uniqueCharactersInWord.includes(c)) uniqueCharactersInWord.push(c);
+      }
+      this.setState({ uniqueCharactersInWord, word: word.toLowerCase() })
+    })
     .catch();
   }
 
@@ -48,7 +57,10 @@ class App extends React.Component<unknown, State> {
     if(!word.includes(key) && !missedChars.includes(key)) {
       missedChars.push(key);
     }
-    guessedChars.push(key);
+
+    if(word.includes(key) && !guessedChars.includes(key)) {
+      guessedChars.push(key);
+    }
 
     this.setState({ guessedChars, missedChars });
   }
@@ -59,7 +71,7 @@ class App extends React.Component<unknown, State> {
   }
 
   render() {
-    const { word, guessedChars, missedChars } = this.state;
+    const { word, guessedChars, missedChars, uniqueCharactersInWord } = this.state;
 
     if(!word) {
       return <LoadingScreen />
@@ -74,7 +86,7 @@ class App extends React.Component<unknown, State> {
           <Word word={word} gussedCharacters={guessedChars}/>
           </div>
         </div>
-        { missedChars.length === 11 && <GameOver onNewWordClick={this.onNewWordClick}/> }
+        <GameOver onNewWordClick={this.onNewWordClick} isGameOver={missedChars.length === 11} hasPlayerWon={uniqueCharactersInWord.length === guessedChars.length} />
       </div>
     );
   }

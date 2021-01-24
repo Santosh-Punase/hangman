@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Game Over screen should render 1`] = `
+exports[`Game Over screen should render gameover 1`] = `
 <DocumentFragment>
   <div
     class="hangman__game-over"
@@ -14,6 +14,25 @@ exports[`Game Over screen should render 1`] = `
       class="hangman__game-over__button"
     >
       New word
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Game Over screen should render player Won 1`] = `
+<DocumentFragment>
+  <div
+    class="hangman__game-over"
+  >
+    <div
+      class="hangman__game-over__text"
+    >
+      You won!!!
+    </div>
+    <div
+      class="hangman__game-over__button"
+    >
+      Start over
     </div>
   </div>
 </DocumentFragment>
