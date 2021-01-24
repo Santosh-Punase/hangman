@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './missed-chars.scss';
+import './missed-characters.scss';
 
 interface Props {
   characters: string[];
