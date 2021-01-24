@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Missed characters should render characters 1`] = `
+<DocumentFragment>
+  <div
+    class="hangman__missed-characters"
+  >
+    <div
+      class="hangman__missed-characters__text"
+    >
+      You Missed:
+    </div>
+    <div
+      class="hangman__missed-characters__char"
+    >
+      <div>
+        a
+      </div>
+      <div>
+        b
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

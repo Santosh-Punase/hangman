@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Guess Word should render guessed characters 1`] = `
+<DocumentFragment>
+  <div
+    class="hangman__word"
+  >
+    <div
+      class="hangman__word__char-box box-empty"
+    />
+    <div
+      class="hangman__word__char-box box-empty"
+    />
+    <div
+      class="hangman__word__char-box box-empty"
+    />
+    <div
+      class="hangman__word__char-box box-empty"
+    />
+    <div
+      class="hangman__word__char-box box-empty"
+    />
+    <div
+      class="hangman__word__char-box"
+    >
+      a
+    </div>
+    <div
+      class="hangman__word__char-box"
+    />
+    <div
+      class="hangman__word__char-box"
+    >
+      a
+    </div>
+    <div
+      class="hangman__word__char-box"
+    />
+    <div
+      class="hangman__word__char-box"
+    />
+    <div
+      class="hangman__word__char-box"
+    />
+  </div>
+</DocumentFragment>
+`;

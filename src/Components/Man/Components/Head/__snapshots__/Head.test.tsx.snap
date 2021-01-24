@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Hangman Man Head should render head 1`] = `
+<DocumentFragment>
+  <div
+    class="hangman__man-head"
+  >
+    <div
+      class="hangman__man-ears"
+    />
+    <div
+      class="hangman__man-face"
+    />
+    <div
+      class="hangman__man-forehead"
+    />
+    <div
+      class="hangman__man-eyes eye__left"
+    />
+    <div
+      class="hangman__man-eyes eye__right"
+    />
+    <div
+      class="hangman__man-chick chick__left"
+    />
+    <div
+      class="hangman__man-chick chick__right"
+    />
+    <div
+      class="hangman__man-nose"
+    />
+    <div
+      class="hangman__man-mouth"
+    />
+    <div
+      class="hangman__man-earing"
+    />
+  </div>
+</DocumentFragment>
+`;

@@ -1,0 +1,776 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Hangman Man should render with 0 lives 1`] = `
+<DocumentFragment>
+  <div
+    class="hangman__man"
+  >
+    <div
+      class="hangman__bar-container"
+    >
+      <div
+        class="hangman__bar bar-horizontal"
+      />
+      <div
+        class="hangman__bar bar-vertical"
+      />
+    </div>
+    <div
+      class="hangman__man-head"
+    >
+      <div
+        class="hangman__man-ears"
+      />
+      <div
+        class="hangman__man-face"
+      />
+      <div
+        class="hangman__man-forehead"
+      />
+      <div
+        class="hangman__man-eyes eye__left"
+      />
+      <div
+        class="hangman__man-eyes eye__right"
+      />
+      <div
+        class="hangman__man-chick chick__left"
+      />
+      <div
+        class="hangman__man-chick chick__right"
+      />
+      <div
+        class="hangman__man-nose"
+      />
+      <div
+        class="hangman__man-mouth"
+      />
+      <div
+        class="hangman__man-earing"
+      />
+    </div>
+    <div
+      class="hangman__man-neck"
+    />
+    <div
+      class="hangman__man-corpus"
+    >
+      <div
+        class="hangman__man-arm__right"
+      />
+      <div
+        class="hangman__man-arm__left"
+      />
+      <div
+        class="hangman__man-hand__right"
+      />
+      <div
+        class="hangman__man-hand__left"
+      />
+      <div
+        class="hangman__man-leg__right"
+      />
+      <div
+        class="hangman__man-leg__left"
+      />
+      <div
+        class="hangman__man-foot__right"
+      />
+      <div
+        class="hangman__man-foot__left"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Hangman Man should render with 1 lives 1`] = `
+<DocumentFragment>
+  <div
+    class="hangman__man"
+  >
+    <div
+      class="hangman__bar-container"
+    >
+      <div
+        class="hangman__bar bar-horizontal"
+      />
+      <div
+        class="hangman__bar bar-vertical"
+      />
+    </div>
+    <div
+      class="hangman__man-head"
+    >
+      <div
+        class="hangman__man-ears"
+      />
+      <div
+        class="hangman__man-face"
+      />
+      <div
+        class="hangman__man-forehead"
+      />
+      <div
+        class="hangman__man-eyes eye__left"
+      />
+      <div
+        class="hangman__man-eyes eye__right"
+      />
+      <div
+        class="hangman__man-chick chick__left"
+      />
+      <div
+        class="hangman__man-chick chick__right"
+      />
+      <div
+        class="hangman__man-nose"
+      />
+      <div
+        class="hangman__man-mouth"
+      />
+      <div
+        class="hangman__man-earing"
+      />
+    </div>
+    <div
+      class="hangman__man-neck"
+    />
+    <div
+      class="hangman__man-corpus"
+    >
+      <div
+        class="hangman__man-arm__right"
+      />
+      <div
+        class="hangman__man-arm__left"
+      />
+      <div
+        class="hangman__man-hand__right"
+      />
+      <div
+        class="hangman__man-hand__left"
+      />
+      <div
+        class="hangman__man-leg__right"
+      />
+      <div
+        class="hangman__man-leg__left"
+      />
+      <div
+        class="hangman__man-foot__right"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Hangman Man should render with 2 lives 1`] = `
+<DocumentFragment>
+  <div
+    class="hangman__man"
+  >
+    <div
+      class="hangman__bar-container"
+    >
+      <div
+        class="hangman__bar bar-horizontal"
+      />
+      <div
+        class="hangman__bar bar-vertical"
+      />
+    </div>
+    <div
+      class="hangman__man-head"
+    >
+      <div
+        class="hangman__man-ears"
+      />
+      <div
+        class="hangman__man-face"
+      />
+      <div
+        class="hangman__man-forehead"
+      />
+      <div
+        class="hangman__man-eyes eye__left"
+      />
+      <div
+        class="hangman__man-eyes eye__right"
+      />
+      <div
+        class="hangman__man-chick chick__left"
+      />
+      <div
+        class="hangman__man-chick chick__right"
+      />
+      <div
+        class="hangman__man-nose"
+      />
+      <div
+        class="hangman__man-mouth"
+      />
+      <div
+        class="hangman__man-earing"
+      />
+    </div>
+    <div
+      class="hangman__man-neck"
+    />
+    <div
+      class="hangman__man-corpus"
+    >
+      <div
+        class="hangman__man-arm__right"
+      />
+      <div
+        class="hangman__man-arm__left"
+      />
+      <div
+        class="hangman__man-hand__right"
+      />
+      <div
+        class="hangman__man-hand__left"
+      />
+      <div
+        class="hangman__man-leg__right"
+      />
+      <div
+        class="hangman__man-leg__left"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Hangman Man should render with 3 lives 1`] = `
+<DocumentFragment>
+  <div
+    class="hangman__man"
+  >
+    <div
+      class="hangman__bar-container"
+    >
+      <div
+        class="hangman__bar bar-horizontal"
+      />
+      <div
+        class="hangman__bar bar-vertical"
+      />
+    </div>
+    <div
+      class="hangman__man-head"
+    >
+      <div
+        class="hangman__man-ears"
+      />
+      <div
+        class="hangman__man-face"
+      />
+      <div
+        class="hangman__man-forehead"
+      />
+      <div
+        class="hangman__man-eyes eye__left"
+      />
+      <div
+        class="hangman__man-eyes eye__right"
+      />
+      <div
+        class="hangman__man-chick chick__left"
+      />
+      <div
+        class="hangman__man-chick chick__right"
+      />
+      <div
+        class="hangman__man-nose"
+      />
+      <div
+        class="hangman__man-mouth"
+      />
+      <div
+        class="hangman__man-earing"
+      />
+    </div>
+    <div
+      class="hangman__man-neck"
+    />
+    <div
+      class="hangman__man-corpus"
+    >
+      <div
+        class="hangman__man-arm__right"
+      />
+      <div
+        class="hangman__man-arm__left"
+      />
+      <div
+        class="hangman__man-hand__right"
+      />
+      <div
+        class="hangman__man-hand__left"
+      />
+      <div
+        class="hangman__man-leg__right"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Hangman Man should render with 4 lives 1`] = `
+<DocumentFragment>
+  <div
+    class="hangman__man"
+  >
+    <div
+      class="hangman__bar-container"
+    >
+      <div
+        class="hangman__bar bar-horizontal"
+      />
+      <div
+        class="hangman__bar bar-vertical"
+      />
+    </div>
+    <div
+      class="hangman__man-head"
+    >
+      <div
+        class="hangman__man-ears"
+      />
+      <div
+        class="hangman__man-face"
+      />
+      <div
+        class="hangman__man-forehead"
+      />
+      <div
+        class="hangman__man-eyes eye__left"
+      />
+      <div
+        class="hangman__man-eyes eye__right"
+      />
+      <div
+        class="hangman__man-chick chick__left"
+      />
+      <div
+        class="hangman__man-chick chick__right"
+      />
+      <div
+        class="hangman__man-nose"
+      />
+      <div
+        class="hangman__man-mouth"
+      />
+      <div
+        class="hangman__man-earing"
+      />
+    </div>
+    <div
+      class="hangman__man-neck"
+    />
+    <div
+      class="hangman__man-corpus"
+    >
+      <div
+        class="hangman__man-arm__right"
+      />
+      <div
+        class="hangman__man-arm__left"
+      />
+      <div
+        class="hangman__man-hand__right"
+      />
+      <div
+        class="hangman__man-hand__left"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Hangman Man should render with 5 lives 1`] = `
+<DocumentFragment>
+  <div
+    class="hangman__man"
+  >
+    <div
+      class="hangman__bar-container"
+    >
+      <div
+        class="hangman__bar bar-horizontal"
+      />
+      <div
+        class="hangman__bar bar-vertical"
+      />
+    </div>
+    <div
+      class="hangman__man-head"
+    >
+      <div
+        class="hangman__man-ears"
+      />
+      <div
+        class="hangman__man-face"
+      />
+      <div
+        class="hangman__man-forehead"
+      />
+      <div
+        class="hangman__man-eyes eye__left"
+      />
+      <div
+        class="hangman__man-eyes eye__right"
+      />
+      <div
+        class="hangman__man-chick chick__left"
+      />
+      <div
+        class="hangman__man-chick chick__right"
+      />
+      <div
+        class="hangman__man-nose"
+      />
+      <div
+        class="hangman__man-mouth"
+      />
+      <div
+        class="hangman__man-earing"
+      />
+    </div>
+    <div
+      class="hangman__man-neck"
+    />
+    <div
+      class="hangman__man-corpus"
+    >
+      <div
+        class="hangman__man-arm__right"
+      />
+      <div
+        class="hangman__man-arm__left"
+      />
+      <div
+        class="hangman__man-hand__right"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Hangman Man should render with 6 lives 1`] = `
+<DocumentFragment>
+  <div
+    class="hangman__man"
+  >
+    <div
+      class="hangman__bar-container"
+    >
+      <div
+        class="hangman__bar bar-horizontal"
+      />
+      <div
+        class="hangman__bar bar-vertical"
+      />
+    </div>
+    <div
+      class="hangman__man-head"
+    >
+      <div
+        class="hangman__man-ears"
+      />
+      <div
+        class="hangman__man-face"
+      />
+      <div
+        class="hangman__man-forehead"
+      />
+      <div
+        class="hangman__man-eyes eye__left"
+      />
+      <div
+        class="hangman__man-eyes eye__right"
+      />
+      <div
+        class="hangman__man-chick chick__left"
+      />
+      <div
+        class="hangman__man-chick chick__right"
+      />
+      <div
+        class="hangman__man-nose"
+      />
+      <div
+        class="hangman__man-mouth"
+      />
+      <div
+        class="hangman__man-earing"
+      />
+    </div>
+    <div
+      class="hangman__man-neck"
+    />
+    <div
+      class="hangman__man-corpus"
+    >
+      <div
+        class="hangman__man-arm__right"
+      />
+      <div
+        class="hangman__man-arm__left"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Hangman Man should render with 7 lives 1`] = `
+<DocumentFragment>
+  <div
+    class="hangman__man"
+  >
+    <div
+      class="hangman__bar-container"
+    >
+      <div
+        class="hangman__bar bar-horizontal"
+      />
+      <div
+        class="hangman__bar bar-vertical"
+      />
+    </div>
+    <div
+      class="hangman__man-head"
+    >
+      <div
+        class="hangman__man-ears"
+      />
+      <div
+        class="hangman__man-face"
+      />
+      <div
+        class="hangman__man-forehead"
+      />
+      <div
+        class="hangman__man-eyes eye__left"
+      />
+      <div
+        class="hangman__man-eyes eye__right"
+      />
+      <div
+        class="hangman__man-chick chick__left"
+      />
+      <div
+        class="hangman__man-chick chick__right"
+      />
+      <div
+        class="hangman__man-nose"
+      />
+      <div
+        class="hangman__man-mouth"
+      />
+      <div
+        class="hangman__man-earing"
+      />
+    </div>
+    <div
+      class="hangman__man-neck"
+    />
+    <div
+      class="hangman__man-corpus"
+    >
+      <div
+        class="hangman__man-arm__right"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Hangman Man should render with 8 lives 1`] = `
+<DocumentFragment>
+  <div
+    class="hangman__man"
+  >
+    <div
+      class="hangman__bar-container"
+    >
+      <div
+        class="hangman__bar bar-horizontal"
+      />
+      <div
+        class="hangman__bar bar-vertical"
+      />
+    </div>
+    <div
+      class="hangman__man-head"
+    >
+      <div
+        class="hangman__man-ears"
+      />
+      <div
+        class="hangman__man-face"
+      />
+      <div
+        class="hangman__man-forehead"
+      />
+      <div
+        class="hangman__man-eyes eye__left"
+      />
+      <div
+        class="hangman__man-eyes eye__right"
+      />
+      <div
+        class="hangman__man-chick chick__left"
+      />
+      <div
+        class="hangman__man-chick chick__right"
+      />
+      <div
+        class="hangman__man-nose"
+      />
+      <div
+        class="hangman__man-mouth"
+      />
+      <div
+        class="hangman__man-earing"
+      />
+    </div>
+    <div
+      class="hangman__man-neck"
+    />
+    <div
+      class="hangman__man-corpus"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Hangman Man should render with 9 lives 1`] = `
+<DocumentFragment>
+  <div
+    class="hangman__man"
+  >
+    <div
+      class="hangman__bar-container"
+    >
+      <div
+        class="hangman__bar bar-horizontal"
+      />
+      <div
+        class="hangman__bar bar-vertical"
+      />
+    </div>
+    <div
+      class="hangman__man-head"
+    >
+      <div
+        class="hangman__man-ears"
+      />
+      <div
+        class="hangman__man-face"
+      />
+      <div
+        class="hangman__man-forehead"
+      />
+      <div
+        class="hangman__man-eyes eye__left"
+      />
+      <div
+        class="hangman__man-eyes eye__right"
+      />
+      <div
+        class="hangman__man-chick chick__left"
+      />
+      <div
+        class="hangman__man-chick chick__right"
+      />
+      <div
+        class="hangman__man-nose"
+      />
+      <div
+        class="hangman__man-mouth"
+      />
+      <div
+        class="hangman__man-earing"
+      />
+    </div>
+    <div
+      class="hangman__man-neck"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Hangman Man should render with 10 lives 1`] = `
+<DocumentFragment>
+  <div
+    class="hangman__man"
+  >
+    <div
+      class="hangman__bar-container"
+    >
+      <div
+        class="hangman__bar bar-horizontal"
+      />
+      <div
+        class="hangman__bar bar-vertical"
+      />
+    </div>
+    <div
+      class="hangman__man-head"
+    >
+      <div
+        class="hangman__man-ears"
+      />
+      <div
+        class="hangman__man-face"
+      />
+      <div
+        class="hangman__man-forehead"
+      />
+      <div
+        class="hangman__man-eyes eye__left"
+      />
+      <div
+        class="hangman__man-eyes eye__right"
+      />
+      <div
+        class="hangman__man-chick chick__left"
+      />
+      <div
+        class="hangman__man-chick chick__right"
+      />
+      <div
+        class="hangman__man-nose"
+      />
+      <div
+        class="hangman__man-mouth"
+      />
+      <div
+        class="hangman__man-earing"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Hangman Man should render with 11 lives 1`] = `
+<DocumentFragment>
+  <div
+    class="hangman__man"
+  >
+    <div
+      class="hangman__bar-container"
+    >
+      <div
+        class="hangman__bar bar-horizontal"
+      />
+      <div
+        class="hangman__bar bar-vertical"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;

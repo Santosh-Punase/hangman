@@ -10,8 +10,9 @@ interface State {
   guessedChars: string[];
   missedChars: string[];
 }
-class App extends React.Component<unknown, State> {
 
+class App extends React.Component<unknown, State> {
+  private _isMounted = false;
   constructor(props: unknown){
     super(props);
     this.state = {
@@ -23,14 +24,19 @@ class App extends React.Component<unknown, State> {
 
   fetchNewWord = () => {
     getGuessWord()
-    .then(word => this.setState({ word: word.toLowerCase() }))
+    .then(word => this._isMounted && this.setState({ word: word.toLowerCase() }))
     .catch();
   }
 
   componentDidMount() {
+    this._isMounted = true;
     document.addEventListener("keydown", this.handleKeyDown);
 
     this.fetchNewWord();   
+  }
+
+  componentWillUnmount() {
+    this._isMounted = false;
   }
 
   handleKeyDown = (keyEvent: KeyboardEvent) => {
